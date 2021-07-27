@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mqtt_simulator.dir/main.c.o"
+  "CMakeFiles/mqtt_simulator.dir/monitor.c.o"
   "CMakeFiles/mqtt_simulator.dir/temp.c.o"
   "CMakeFiles/mqtt_simulator.dir/util.c.o"
   "mqtt_simulator"

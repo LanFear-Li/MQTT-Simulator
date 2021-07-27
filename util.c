@@ -47,3 +47,11 @@ void on_send_failure(void *context, MQTTAsync_failureData *response) {
         exit(EXIT_FAILURE);
     }
 }
+
+void on_subscribe(void* context, MQTTAsync_successData* response){
+    printf("Subscribe succeeded\n");
+}
+
+void on_subscribe_failure(void* context, MQTTAsync_failureData* response){
+    printf("Subscribe failed, rc %d\n", response->code);
+}

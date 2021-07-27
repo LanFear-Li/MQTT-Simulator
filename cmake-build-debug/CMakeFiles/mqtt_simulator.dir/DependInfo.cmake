@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/home/lanfear/CLionProjects/MQTT-Simulator/main.c" "/home/lanfear/CLionProjects/MQTT-Simulator/cmake-build-debug/CMakeFiles/mqtt_simulator.dir/main.c.o"
+  "/home/lanfear/CLionProjects/MQTT-Simulator/monitor.c" "/home/lanfear/CLionProjects/MQTT-Simulator/cmake-build-debug/CMakeFiles/mqtt_simulator.dir/monitor.c.o"
   "/home/lanfear/CLionProjects/MQTT-Simulator/temp.c" "/home/lanfear/CLionProjects/MQTT-Simulator/cmake-build-debug/CMakeFiles/mqtt_simulator.dir/temp.c.o"
   "/home/lanfear/CLionProjects/MQTT-Simulator/util.c" "/home/lanfear/CLionProjects/MQTT-Simulator/cmake-build-debug/CMakeFiles/mqtt_simulator.dir/util.c.o"
   )

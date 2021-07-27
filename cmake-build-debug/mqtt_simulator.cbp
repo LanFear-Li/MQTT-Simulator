@@ -79,6 +79,12 @@
 		<Unit filename="/home/lanfear/CLionProjects/MQTT-Simulator/main.c">
 			<Option target="mqtt_simulator"/>
 		</Unit>
+		<Unit filename="/home/lanfear/CLionProjects/MQTT-Simulator/monitor.c">
+			<Option target="mqtt_simulator"/>
+		</Unit>
+		<Unit filename="/home/lanfear/CLionProjects/MQTT-Simulator/monitor.h">
+			<Option target="mqtt_simulator"/>
+		</Unit>
 		<Unit filename="/home/lanfear/CLionProjects/MQTT-Simulator/temp.c">
 			<Option target="mqtt_simulator"/>
 		</Unit>

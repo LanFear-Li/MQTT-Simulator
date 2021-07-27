@@ -169,6 +169,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/mqtt_simulator.dir/build.make CMakeFiles/mqtt_simulator.dir/main.c.s
 .PHONY : main.c.s
 
+monitor.o: monitor.c.o
+
+.PHONY : monitor.o
+
+# target to build an object file
+monitor.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mqtt_simulator.dir/build.make CMakeFiles/mqtt_simulator.dir/monitor.c.o
+.PHONY : monitor.c.o
+
+monitor.i: monitor.c.i
+
+.PHONY : monitor.i
+
+# target to preprocess a source file
+monitor.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mqtt_simulator.dir/build.make CMakeFiles/mqtt_simulator.dir/monitor.c.i
+.PHONY : monitor.c.i
+
+monitor.s: monitor.c.s
+
+.PHONY : monitor.s
+
+# target to generate assembly for a file
+monitor.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/mqtt_simulator.dir/build.make CMakeFiles/mqtt_simulator.dir/monitor.c.s
+.PHONY : monitor.c.s
+
 temp.o: temp.c.o
 
 .PHONY : temp.o
@@ -235,6 +262,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... monitor.o"
+	@echo "... monitor.i"
+	@echo "... monitor.s"
 	@echo "... temp.o"
 	@echo "... temp.i"
 	@echo "... temp.s"
