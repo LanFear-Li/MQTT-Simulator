@@ -1,0 +1,4 @@
+/snap/clion/162/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_CXX_COMPILER=/bin/g++ -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/lanfear/CLionProjects/MQTT-Simulator/MQTT_monitor
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/lanfear/CLionProjects/MQTT-Simulator/MQTT_monitor/cmake-build-debug
