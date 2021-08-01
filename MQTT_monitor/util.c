@@ -8,7 +8,7 @@ void connect_lost(void *context, char *cause) {
 int message_arrived(void *context, char *topic_name, int topic_len, MQTTAsync_message *message) {
     printf("Message arrived\n");
     printf("    topic: %s\n", topic_name);
-    printf("    message: %.*s\n", message->payloadlen, (char*)message->payload);
+    printf("    message: %d\n", *(int *) message->payload);
     MQTTAsync_freeMessage(&message);
     MQTTAsync_free(topic_name);
     return 1;
@@ -52,10 +52,10 @@ void on_send_failure(void *context, MQTTAsync_failureData *response) {
     }
 }
 
-void on_subscribe(void* context, MQTTAsync_successData* response){
+void on_subscribe(void *context, MQTTAsync_successData *response) {
     printf("Subscribe succeeded\n");
 }
 
-void on_subscribe_failure(void* context, MQTTAsync_failureData* response){
+void on_subscribe_failure(void *context, MQTTAsync_failureData *response) {
     printf("Subscribe failed, rc %d\n", response->code);
 }

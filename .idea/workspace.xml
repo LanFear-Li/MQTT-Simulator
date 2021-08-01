@@ -12,105 +12,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba9ca036-6230-4036-81cd-44dc258af40b" name="Default Changelist" comment="pub and sub">
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/.idea/MQTT_monitor.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/3.20.2/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/3.20.2/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/MQTT_monitor.dir/C.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/MQTT_monitor.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/MQTT_monitor.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/MQTT_monitor.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/MQTT_monitor.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/MQTT_monitor.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/MQTT_monitor.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/MQTT_monitor.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/MQTT_monitor.dir/main.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/MQTT_monitor.dir/monitor.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/MQTT_monitor.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/MQTT_monitor.dir/util.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/MQTT_monitor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/MQTT_monitor.cbp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/monitor.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/monitor.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/util.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_monitor/util.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/.idea/MQTT_temp_client.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/CMakeLists.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/3.20.2/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/3.20.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/3.20.2/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/3.20.2/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/C.includecache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/main.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/temp.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/util.c.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/MQTT_temp_client" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/MQTT_temp_client.cbp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/temp.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/temp.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/util.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MQTT_temp_client/util.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mqtt_simulator.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mqtt_simulator.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mqtt_simulator.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mqtt_simulator.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mqtt_simulator.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mqtt_simulator.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mqtt_simulator.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mqtt_simulator.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MQTT_monitor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/MQTT_monitor/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/MQTT_monitor/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/temp.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/temp.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/MQTT_temp_client" beforeDir="false" afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/MQTT_temp_client" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/MQTT_temp_client/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MQTT_temp_client/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/MQTT_temp_client/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MQTT_temp_client/temp.c" beforeDir="false" afterPath="$PROJECT_DIR$/MQTT_temp_client/temp.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MQTT_temp_client/temp.h" beforeDir="false" afterPath="$PROJECT_DIR$/MQTT_temp_client/temp.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,11 +60,6 @@
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="mqtt_simulator" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="mqtt_simulator" TARGET_NAME="mqtt_simulator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="mqtt_simulator" RUN_TARGET_NAME="mqtt_simulator">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -170,6 +77,7 @@
       <workItem from="1627390747523" duration="11672000" />
       <workItem from="1627543492484" duration="3451000" />
       <workItem from="1627549505179" duration="1164000" />
+      <workItem from="1627733985420" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1627390813664</created>

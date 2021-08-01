@@ -1,4 +1,5 @@
 #include "temp.h"
+#include <sys/socket.h>
 
 void temp_init(MQTTAsync *temp_sensor) {
     MQTTAsync_connectOptions conn_opts = MQTTAsync_connectOptions_initializer;
@@ -33,6 +34,7 @@ void temp_publish(MQTTAsync temp_sensor, int sensor_data) {
     MQTTAsync_message publish_message = MQTTAsync_message_initializer;
     int rc;
 
+    /* set callback function */
     opts.onSuccess = NULL;
     opts.onFailure = NULL;
     opts.context = temp_sensor;
@@ -41,8 +43,10 @@ void temp_publish(MQTTAsync temp_sensor, int sensor_data) {
     printf("sensor data is %d\n", sensor_data);
     snprintf(str, 3, "%d", sensor_data);
 
-    publish_message.payload = str;
-    publish_message.payloadlen = sizeof(long);
+    publish_message.payload = malloc(4);
+    ((int *) publish_message.payload)[0] = sensor_data;
+
+    publish_message.payloadlen = 1;
     publish_message.qos = 1;
     publish_message.retained = 0;
 

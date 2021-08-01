@@ -6,19 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/home/lanfear/CLionProjects/MQTT-Simulator/MQTT_temp_client/main.c
-temp.h
-/home/lanfear/CLionProjects/MQTT-Simulator/MQTT_temp_client/temp.h
-
 /home/lanfear/CLionProjects/MQTT-Simulator/MQTT_temp_client/temp.c
 temp.h
 /home/lanfear/CLionProjects/MQTT-Simulator/MQTT_temp_client/temp.h
+sys/socket.h
+-
 
 /home/lanfear/CLionProjects/MQTT-Simulator/MQTT_temp_client/temp.h
-util.h
-/home/lanfear/CLionProjects/MQTT-Simulator/MQTT_temp_client/util.h
-
-/home/lanfear/CLionProjects/MQTT-Simulator/MQTT_temp_client/util.c
 util.h
 /home/lanfear/CLionProjects/MQTT-Simulator/MQTT_temp_client/util.h
 

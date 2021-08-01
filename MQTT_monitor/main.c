@@ -7,10 +7,7 @@ int main() {
     sleep(5);
     monitor_subscribe(monitor);
 
-
-    while (1) {
-
-    }
+    getchar();
 
     return 0;
 }
