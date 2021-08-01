@@ -12,17 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2a9cbe59-1936-437c-91ba-0d3e794b5953" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/temp.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../MQTT_temp_client/cmake-build-debug/CMakeFiles/MQTT_temp_client.dir/temp.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MQTT_temp_client/cmake-build-debug/MQTT_temp_client" beforeDir="false" afterPath="$PROJECT_DIR$/../MQTT_temp_client/cmake-build-debug/MQTT_temp_client" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MQTT_temp_client/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../MQTT_temp_client/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MQTT_temp_client/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../MQTT_temp_client/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MQTT_temp_client/temp.c" beforeDir="false" afterPath="$PROJECT_DIR$/../MQTT_temp_client/temp.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +75,7 @@
       <workItem from="1627654985648" duration="8000" />
       <workItem from="1627655061165" duration="3000" />
       <workItem from="1627655078681" duration="10000" />
+      <workItem from="1627797856704" duration="371000" />
     </task>
     <servers />
   </component>
