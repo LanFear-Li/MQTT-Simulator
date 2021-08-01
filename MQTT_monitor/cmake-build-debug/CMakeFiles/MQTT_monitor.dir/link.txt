@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/MQTT_monitor.dir/main.c.o CMakeFiles/MQTT_monitor.dir/monitor.c.o CMakeFiles/MQTT_monitor.dir/util.c.o -o MQTT_monitor  -lpaho-mqtt3a 

@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/mqtt_simulator.dir/main.c.o CMakeFiles/mqtt_simulator.dir/temp.c.o CMakeFiles/mqtt_simulator.dir/util.c.o CMakeFiles/mqtt_simulator.dir/monitor.c.o -o mqtt_simulator  -lpthread -lpaho-mqtt3a 

@@ -39,14 +39,12 @@ void temp_publish(MQTTAsync temp_sensor, int sensor_data) {
     opts.onFailure = NULL;
     opts.context = temp_sensor;
 
-    char *str = malloc(3);
-    printf("sensor data is %d\n", sensor_data);
-    snprintf(str, 3, "%d", sensor_data);
+
 
     publish_message.payload = malloc(4);
     ((int *) publish_message.payload)[0] = sensor_data;
 
-    publish_message.payloadlen = 1;
+    publish_message.payloadlen = 4;
     publish_message.qos = 1;
     publish_message.retained = 0;
 
