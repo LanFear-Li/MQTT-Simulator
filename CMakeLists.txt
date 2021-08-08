@@ -3,8 +3,8 @@ project(MQTT-Simulator C)
 
 set(CMAKE_C_STANDARD 11)
 
-add_executable(pub pub.c temp.c util.c)
-add_executable(sub sub.c monitor.c util.c)
+add_executable(sensor sensor.c util.c queue.c)
+add_executable(user user.c util.c)
 
-target_link_libraries(pub paho-mqtt3a)
-target_link_libraries(sub paho-mqtt3a)
+target_link_libraries(sensor paho-mqtt3a pthread)
+target_link_libraries(user paho-mqtt3a uuid)

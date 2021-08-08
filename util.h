@@ -4,31 +4,30 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <pthread.h>
 #include <math.h>
 #include <unistd.h>
-#include "MQTTAsync.h"
 
+#include <uuid/uuid.h>
+#include <pthread.h>
+#include <semaphore.h>
+#include <sys/socket.h>
+#include <MQTTAsync.h>
+
+#define REQUEST_TOPIC       "request/"
+#define RESPONSE_TOPIC      "response/"
 #define SERVER_ADDRESS      "tcp://localhost:1883"
-#define EVENTBUS_TOPIC      "eventbus"
+#define SENSOR_ID           "temp_sensor"
+#define USER_ID             "ignoramus"
 
-#define TEMP_SENSOR_ID      "temp_sensor_pub"
-#define MONITOR_ID          "monitor_sub"
+#define TRUE                1
+#define FALSE               0
+#define NAME_MAX_SIZE       100
+#define ALIVE_INTERVAL      100
+#define PUBLISH_QoS         1
+#define SUBSCRIBE_QoS       1
 
 void connect_lost(void *context, char *cause);
 
-int message_arrived(void *context, char *topic_name, int topic_len, MQTTAsync_message *message);
-
-void on_disconnect(void *context, MQTTAsync_successData *response);
-
-void on_disconnect_failure(void *context, MQTTAsync_failureData *response);
-
-void on_send(void *context, MQTTAsync_successData *response);
-
-void on_send_failure(void *context, MQTTAsync_failureData *response);
-
-void on_subscribe(void* context, MQTTAsync_successData* response);
-
-void on_subscribe_failure(void* context, MQTTAsync_failureData* response);
+void mqtt_subscribe(MQTTAsync device, const char *topic);
 
 #endif //MQTT_SIMULATOR_UTIL_H
