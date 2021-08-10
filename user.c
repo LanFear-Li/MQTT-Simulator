@@ -9,6 +9,8 @@
 
 static MQTTAsync user;
 
+static sem_t request_con;
+
 void user_init() {
     MQTTAsync_connectOptions conn_opts = MQTTAsync_connectOptions_initializer;
     int rc;
@@ -62,7 +64,7 @@ void user_uuid_publish(char *sensor_name) {
     message.qos = PUBLISH_QoS;
     message.retained = FALSE;
 
-    size_t len = strlen(REQUEST_TOPIC) + strlen(sensor_name + 1);
+    size_t len = strlen(REQUEST_TOPIC) + strlen(sensor_name) + 1;
     char publish_topic[len];
     sprintf(publish_topic, "%s%s", REQUEST_TOPIC, sensor_name);
 
@@ -81,6 +83,8 @@ void user_uuid_publish(char *sensor_name) {
 }
 
 int user_request_callback(void *context, char *topic_name, int topic_len, MQTTAsync_message *message) {
+    sem_post(&request_con);
+
     printf("NOTICE: data message arrived\n");
     printf("topic: %s\n", topic_name);
     printf("message: %d\n", *(int *) message->payload);
@@ -94,11 +98,15 @@ int main() {
     char sensor_name[NAME_MAX_SIZE];
     printf("please input a sensor name within 100 bytes\n");
 
+    sem_init(&request_con, 0, 0);
     while (scanf("%s", sensor_name) != EOF) {
-        if (!strcmp(sensor_name, "exit"))
+        if (!strcmp(sensor_name, "exit")) {
+            mqtt_close(user);
             break;
+        }
 
         user_uuid_publish(sensor_name);
+        sem_wait(&request_con);
     }
 
     return 0;

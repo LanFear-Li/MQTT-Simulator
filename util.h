@@ -22,12 +22,14 @@
 #define TRUE                1
 #define FALSE               0
 #define NAME_MAX_SIZE       100
-#define ALIVE_INTERVAL      100
+#define ALIVE_INTERVAL      5
 #define PUBLISH_QoS         1
 #define SUBSCRIBE_QoS       1
 
 void connect_lost(void *context, char *cause);
 
 void mqtt_subscribe(MQTTAsync device, const char *topic);
+
+void mqtt_close(MQTTAsync topic);
 
 #endif //MQTT_SIMULATOR_UTIL_H

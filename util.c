@@ -23,3 +23,13 @@ void mqtt_subscribe(MQTTAsync device, const char *topic) {
 
     printf("Subscribe successfully\n");
 }
+
+void mqtt_close(MQTTAsync topic) {
+    int rc = MQTTAsync_disconnect(topic, NULL);
+    if (rc != MQTTASYNC_SUCCESS) {
+        printf("Topic disconnect failed, return code %d\n", rc);
+    }
+
+    printf("Disconnect successfully\n");
+    MQTTAsync_destroy(&topic);
+}

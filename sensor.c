@@ -67,9 +67,7 @@ void *sensor_data_publish() {
         opts.onFailure = NULL;
         opts.context = sensor;
 
-        sem_wait(&publish_queue->full);
         struct queue_item item = publish_queue_pop(publish_queue);
-        sem_post(&publish_queue->empty);
 
         message.payload = malloc(sizeof(int));
         ((int *) message.payload)[0] = item.data;
@@ -78,7 +76,7 @@ void *sensor_data_publish() {
         message.qos = PUBLISH_QoS;
         message.retained = TRUE;
 
-        size_t len = strlen(RESPONSE_TOPIC) + strlen(SENSOR_ID) + UUID_STR_LEN + 1;
+        size_t len = strlen(RESPONSE_TOPIC) + strlen(SENSOR_ID) + 1 + UUID_STR_LEN + 1;
         char topic[len];
         sprintf(topic, "%s%s/%s", RESPONSE_TOPIC, SENSOR_ID, item.uuid);
 
@@ -96,9 +94,9 @@ int sensor_response_callback(void *context, char *topic_name, int topic_len, MQT
     printf("NOTICE: user request arrived\n");
     printf("uuid is %s\n", (char *) message->payload);
 
-    sem_wait(&publish_queue->empty);
+    sem_wait(&data_mutex);
     publish_queue_push(publish_queue, message->payload, data);
-    sem_post(&publish_queue->full);
+    sem_post(&data_mutex);
 
     MQTTAsync_freeMessage(&message);
     MQTTAsync_free(topic_name);
