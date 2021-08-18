@@ -17,13 +17,13 @@ void user_init() {
 
     rc = MQTTAsync_create(&user, SERVER_ADDRESS, USER_ID, MQTTCLIENT_PERSISTENCE_NONE, NULL);
     if (rc != MQTTASYNC_SUCCESS) {
-        printf("Failed to create client object, return code %d\n", rc);
+        // printf("Failed to create client object, return code %d\n", rc);
         return;
     }
 
     rc = MQTTAsync_setCallbacks(user, NULL, connect_lost, user_request_callback, NULL);
     if (rc != MQTTASYNC_SUCCESS) {
-        printf("Failed to set callback, return code %d\n", rc);
+        // printf("Failed to set callback, return code %d\n", rc);
         return;
     }
 
@@ -35,11 +35,11 @@ void user_init() {
 
     rc = MQTTAsync_connect(user, &conn_opts);
     if (rc != MQTTASYNC_SUCCESS) {
-        printf("Failed to start connect, return code %d\n", rc);
+        // printf("Failed to start connect, return code %d\n", rc);
         return;
     }
 
-    printf("Start connection successfully\n");
+    // printf("Start connection successfully\n");
     sleep(1);
 }
 
@@ -62,7 +62,7 @@ void user_uuid_publish(char *sensor_name) {
     message.payload = uuid;
     message.payloadlen = UUID_STR_LEN;
     message.qos = PUBLISH_QoS;
-    message.retained = FALSE;
+    message.retained = TRUE;
 
     size_t len = strlen(REQUEST_TOPIC) + strlen(sensor_name) + 1;
     char publish_topic[len];
@@ -70,10 +70,10 @@ void user_uuid_publish(char *sensor_name) {
 
     rc = MQTTAsync_sendMessage(user, publish_topic, &message, &opts);
     if (rc != MQTTASYNC_SUCCESS) {
-        printf("Failed to send message, return code %d\n", rc);
+        // printf("Failed to send message, return code %d\n", rc);
         return;
     }
-    printf("Send uuid successfully\n");
+    // printf("Send uuid successfully\n");
 
     len = strlen(RESPONSE_TOPIC) + strlen(sensor_name) + 1 + UUID_STR_LEN + 1;
     char subscribe_topic[len];
@@ -85,9 +85,9 @@ void user_uuid_publish(char *sensor_name) {
 int user_request_callback(void *context, char *topic_name, int topic_len, MQTTAsync_message *message) {
     sem_post(&request_con);
 
-    printf("NOTICE: data message arrived\n");
-    printf("topic: %s\n", topic_name);
-    printf("message: %d\n", *(int *) message->payload);
+    // printf("NOTICE: data message arrived\n");
+    // printf("topic: %s\n", topic_name);
+    // printf("message: %d\n", *(int *) message->payload);
     MQTTAsync_freeMessage(&message);
     return 1;
 }
@@ -95,17 +95,9 @@ int user_request_callback(void *context, char *topic_name, int topic_len, MQTTAs
 int main() {
     user_init();
 
-    char sensor_name[NAME_MAX_SIZE];
-    printf("please input a sensor name within 100 bytes\n");
-
     sem_init(&request_con, 0, 0);
-    while (scanf("%s", sensor_name) != EOF) {
-        if (!strcmp(sensor_name, "exit")) {
-            mqtt_close(user);
-            break;
-        }
-
-        user_uuid_publish(sensor_name);
+    while (TRUE) {
+        user_uuid_publish(SENSOR_ID);
         sem_wait(&request_con);
     }
 

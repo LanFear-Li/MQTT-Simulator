@@ -10,7 +10,7 @@ void sensor_init();
 
 int sensor_response_callback(void *context, char *topic_name, int topic_len, MQTTAsync_message *message);
 
-void *sensor_data_publish();
+void *sensor_handle_request();
 
 void *sensor_data_update();
 

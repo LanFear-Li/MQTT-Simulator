@@ -5,7 +5,7 @@
 #include "util.h"
 
 void connect_lost(void *context, char *cause) {
-    printf("connect lost due to %s\n", cause);
+    // printf("connect lost due to %s\n", cause);
 }
 
 void mqtt_subscribe(MQTTAsync device, const char *topic) {
@@ -17,19 +17,27 @@ void mqtt_subscribe(MQTTAsync device, const char *topic) {
     opts.context = device;
 
     if ((rc = MQTTAsync_subscribe(device, topic, SUBSCRIBE_QoS, &opts)) != MQTTASYNC_SUCCESS) {
-        printf("Failed to start subscribe, return code %d\n", rc);
+        // printf("Failed to start subscribe, return code %d\n", rc);
         return;
     }
 
-    printf("Subscribe successfully\n");
+    // printf("Subscribe successfully\n");
 }
 
 void mqtt_close(MQTTAsync topic) {
     int rc = MQTTAsync_disconnect(topic, NULL);
     if (rc != MQTTASYNC_SUCCESS) {
-        printf("Topic disconnect failed, return code %d\n", rc);
+        // printf("Topic disconnect failed, return code %d\n", rc);
     }
 
-    printf("Disconnect successfully\n");
+    // printf("Disconnect successfully\n");
     MQTTAsync_destroy(&topic);
+}
+
+void msleep(long millisecond) {
+    struct timespec ts;
+
+    ts.tv_sec = millisecond  / 1000;
+    ts.tv_nsec = (millisecond % 1000) * 1000000;
+    nanosleep(&ts, &ts);
 }

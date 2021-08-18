@@ -3,9 +3,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
 #include <string.h>
 #include <math.h>
-#include <unistd.h>
 
 #include <uuid/uuid.h>
 #include <pthread.h>
@@ -21,15 +21,20 @@
 
 #define TRUE                1
 #define FALSE               0
-#define NAME_MAX_SIZE       100
+#define MAX_NAME_SIZE       100
+#define MAX_THREAD_SCALE    100
 #define ALIVE_INTERVAL      5
 #define PUBLISH_QoS         1
 #define SUBSCRIBE_QoS       1
+
+typedef size_t bool;
 
 void connect_lost(void *context, char *cause);
 
 void mqtt_subscribe(MQTTAsync device, const char *topic);
 
 void mqtt_close(MQTTAsync topic);
+
+void msleep(long millisecond);
 
 #endif //MQTT_SIMULATOR_UTIL_H
